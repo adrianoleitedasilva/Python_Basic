@@ -1,4 +1,4 @@
-# Python_Basic
+# Python Basic
 
 Uma coletânea de projetos básicos, que vão ajudar os alunos a se desenvolverem no mundo da Linguagem Python.
 
