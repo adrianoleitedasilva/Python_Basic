@@ -5,7 +5,7 @@ def rolar_dados(total: int = 2) -> list[int]:
         raise ValueError
     
     rolls: list[int] = []
-    for i in range(total):
+    for _ in range(total):
         random_roll: int = random.randint(1, 6)
         rolls.append(random_roll)
 
@@ -14,15 +14,16 @@ def rolar_dados(total: int = 2) -> list[int]:
 def main():
     while True:
         try:
-            user_imput: str = input('Quantos dados você gostaria de jogar?')
+            user_input: str = input("Quantos dados você gostaria de jogar? (ou digite 'sair' para encerrar): ")
 
-            if user_imput.lower() == 'exit':
+            if user_input.lower() in ['sair', 'exit']:
                 print("Obrigado por jogar!")
                 break
-            print(rolar_dados(int(user_imput)))
-        except ValueError:
-            print("(Por favor, entre com um valor válido!)")
 
+            print("Você rolou:", rolar_dados(int(user_input)))
+
+        except ValueError:
+            print("Por favor, entre com um número válido!")
 
 if __name__ == "__main__":
     main()

@@ -15,3 +15,7 @@ Uma coletânea de projetos básicos, que vão ajudar os alunos a se desenvolvere
 **Simulador de Dados**
 
 <img width="331" height="40" alt="Image" src="https://github.com/user-attachments/assets/985d66f1-745e-4073-9c34-91f79e423bed" />
+
+**Forca**
+
+<img width="462" height="217" alt="Image" src="https://github.com/user-attachments/assets/d743c99d-ac41-4260-86e5-bb78e4aefbde" />
