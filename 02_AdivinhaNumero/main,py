@@ -1,0 +1,21 @@
+from random import randint
+
+menor_numero, maior_numero = 1, 10
+numero_sorteado: int = randint(menor_numero, maior_numero)
+
+print(f"Tenta adivinhar o número entre {menor_numero} e {maior_numero}")
+
+while True:
+    try:
+        palpite_usuario: int = int(input('Digite um número: '))
+    except ValueError as e:
+        print("Tente novamente!")
+        continue
+
+    if palpite_usuario > numero_sorteado:
+        print("O número sorteado é menor.")
+    elif palpite_usuario < numero_sorteado:
+        print("O número sorteado é maior")
+    else:
+        print("Você acertou!")
+        break
